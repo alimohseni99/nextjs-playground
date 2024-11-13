@@ -1,5 +1,9 @@
-import Image from "next/image";
-
-export default function Home() {
-  return <p>Hello World</p>;
+export default async function Home() {
+  const dogs = await [];
+  return (
+    <>
+      <h1>Hello World</h1>
+      {!dogs.length && <p>Get more dogs man, sad face</p>}
+    </>
+  );
 }
