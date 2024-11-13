@@ -1,4 +1,4 @@
-import { dogService } from "@/services/dogs/instance";
+import { dogService } from "@/services";
 
 export default async function Home() {
   const dogs = await dogService.getAll();
