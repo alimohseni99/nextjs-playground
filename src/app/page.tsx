@@ -1,15 +1,8 @@
-function createDogService() {
-  return {
-    async getAll() {
-      return [1];
-    },
-  };
-}
+import { dogService } from "@/services/dogs/instance";
 
-const dogService = createDogService();
 export default async function Home() {
   const dogs = await dogService.getAll();
-  return (  
+  return (
     <>
       <h1>Hello World</h1>
       {!dogs.length && <p>Get more dogs man, sad face</p>}
