@@ -1,4 +1,4 @@
-import { Dogs } from "@/services/dogs/dogs";
+import { Dogs } from "@/features/dogs/dogs";
 
 export default async function Home() {
   return <Dogs />;
